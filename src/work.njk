@@ -1,0 +1,50 @@
+---
+title: "Work"
+layout: base.layout
+tags: system
+---
+
+{% include '_header.njk' %}
+
+<section class="list">
+  {% for project in collections.projects %}
+    <h2>
+      <span class="tags">{{ project.data.tags }}</span>
+      <a href="{{ project.url }}" title="{{ project.data.title }}">
+        {{ project.data.title }} <span class="issues">{{ project.data.issues }}</span>
+        <span class="img">{% responsiveImage project.data.featuredImg, project.data.title, "50vw" %}</span>
+      </a>
+    </h2>
+  {% endfor %}
+
+  <button title="Projects"><a href="#grid" title="Projects">
+    <svg class="list-arrow" viewBox="0 0 100 100">
+      <path d="M 0,50 L 50,100 L 53,97 L 6,50 L 53,3 L 50,0 Z"
+      transform="rotate(-90 50 50)"/>
+    </svg>
+  </a></button>
+</section>
+
+<section id="grid">
+  {% for project in collections.projects %}
+    <a href="{{ project.url }}" title="{{ project.data.title }}">
+      <article>
+        <div class="img-box">
+          {% responsiveImage project.data.featuredImg, project.data.title, "(min-width: 660px) 40vw, 80vw" %}
+        </div>
+        <h3>
+          {{ project.data.title }}
+          {% if project.data.issues %}
+            <span class="issues">{{ project.data.issues }}</span>
+          {% endif %}
+        </h3>
+        <h3><strong>{{ project.data.subTitle }}</strong></h3>
+        <div class="grid-meta">
+          <p>—</p>
+          <p>{{ "Published by " + project.data.publisher + "," if project.data.publisher }} {{ project.data.year }}</p>
+          <p>{{ project.data.tags }}</p>
+        </div>
+      </article>
+    </a>
+  {% endfor %}
+</section>

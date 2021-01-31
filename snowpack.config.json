@@ -1,6 +1,6 @@
 {
   "mount": {
-    "_output": "/",
+    "output": "/",
     "src": "/_dist_"
   },
   "plugins": [

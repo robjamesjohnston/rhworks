@@ -1,0 +1,24 @@
+<section class="carousel-wrap">
+  <div class="carousel">
+    {% for img in imgs %}
+      <div
+        class="carousel-cell {{ "img-background" if bgColor and not img.noBg }}"
+        {% if bgColor and not img.noBg %}
+          style="background-color: {{ bgColor }}"
+        {% endif %}
+      >
+        {% responsiveImage img.src, img.alt, "80vw" if bgColor and not img.noBg else "100vw", "data-flickity-lazyload-" %}
+      </div>
+    {% endfor %}
+  </div>
+  
+  <div class="description">
+    <button class="toggle"></button>
+    <div class="words">{{ content | safe }}</div>
+  </div>
+  
+  <div class="data">
+    <div class="caption"><p></p></div>
+    <div class="number"><p></p></div>
+  </div>
+</section>

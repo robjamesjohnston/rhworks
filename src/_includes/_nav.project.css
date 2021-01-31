@@ -1,0 +1,37 @@
+.nav-project {
+  padding: 0 var(--margin-padding-size);
+}
+.nav-project {
+  border-top: 1px solid var(--dark-color);
+}
+.nav-project {
+  height: var(--nav-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-prev, .nav-center, .nav-next {
+  width: 33.333%;
+}
+.nav-center {
+  text-align: center;
+}
+.nav-next {
+  text-align: right;
+}
+.nav-active {
+  font-weight: var(--bold-font-weight);
+
+}
+.nav-arrow {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  z-index: 40;
+}
+.na-left {
+  left: 0;
+}
+.na-right {
+  right: 0;
+}

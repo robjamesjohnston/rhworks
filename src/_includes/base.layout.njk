@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500&display=swap" rel="stylesheet">
+  {% set css %}
+    {% include 'css/main.css' %}
+    {% if "project.layout" in layout %}
+      {% include 'css/flickity.min.css' %}
+    {% endif %}
+    {% include '../index.css' %}
+    {% include '../work.css' %}
+    {% include '../info.css' %}
+    {% include '_header.css' %}
+    {% include '_nav.project.css' %}
+    {% include '_carousel.css' %}
+    {% include '_iframe.css' %}
+  {% endset %}
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
+  {% include '_meta.njk' %}
+</head>
+<body>
+  <main
+    {% if homepage %}
+      class="homepage"
+    {% elseif "project.layout" in layout %}
+      class="project-page"
+      {% elseif "website.layout" in layout %}
+      class="website-page"
+    {% endif %}
+  >
+    {{ content | safe }}
+  </main>
+  {% set js %}
+    {% if "project.layout" in layout %}
+      {% include "js/flickity.pkgd.min.js" %}
+    {% endif %}
+    {% include "js/rhworks.js" %}
+  {% endset %}
+  <script>
+    {{ js | jsmin | safe }}
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<nav class="nav-project">
+  {% set prevProject = collections.projects | getPreviousCollectionItem(page) %}
+  {% set lastProject = collections.projects | getLastCollectionItem(page) %}
+  <a class="nav-prev" href="{{ prevProject.url if prevProject else lastProject.url }}" title="{{ title }}">
+    <svg class="nav-arrow na-left" viewBox="0 0 100 100">
+      <path d="M 0,50 L 50,100 L 55,95 L 10,50 L 55,5 L 50,0 Z"/>
+    </svg>
+    {{ prevProject.data.title if prevProject else lastProject.data.title }}
+  </a>
+
+  <a class="nav-active nav-center" href="{{ page.url }}" title="{{ title }}">{{ title }}</a>
+
+  {% set nextProject = collections.projects | getNextCollectionItem(page) %}
+  {% set firstProject = collections.projects | getFirstCollectionItem(page) %}
+  <a class="nav-next" href="{{ nextProject.url if nextProject else firstProject.url }}" title="{{ title }}">
+    {{ nextProject.data.title if nextProject else firstProject.data.title }}
+    <svg class="nav-arrow na-right" viewBox="0 0 100 100">
+      <path d="M 0,50 L 50,100 L 55,95 L 10,50 L 55,5 L 50,0 Z"
+      transform="rotate(180 50 50)"/>
+    </svg>
+  </a>
+</nav>

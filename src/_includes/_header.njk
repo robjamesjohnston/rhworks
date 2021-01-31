@@ -1,0 +1,17 @@
+<header>
+  <div class="logo">
+    <a href="/" title="{{ site.title }}">
+    <img 
+      src="../../assets/rhworks.png"
+      alt="{{ site.title }}"
+      width="418"
+      height="163"
+    >
+  </a>
+  </div>
+  <nav>
+  {% for sys in collections.system %}
+    <a class="{{ 'nav-active' if page.url == sys.url }}"  href="{{ sys.url }}" title="{{ sys.data.title }}">{{ sys.data.title }}</a>
+  {% endfor %}
+</nav>
+</header>

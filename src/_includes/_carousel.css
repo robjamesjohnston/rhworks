@@ -1,0 +1,117 @@
+/* Flickity */
+.carousel-wrap {
+  height: calc(100% - (var(--header-nav-height)));
+  width: 100%;
+  position: relative;
+  background-color: var(--dark-color);
+}
+.carousel {
+  height: 50%;
+  width: 100%;
+  background-color: var(--light-color);
+}
+@media screen and (min-aspect-ratio: 3/4) {
+  .carousel {
+    height: 100%;
+  }
+}
+.carousel-cell {
+  height: 100%;
+  width: 100%;
+}
+.carousel-cell.img-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-cell img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.carousel-cell.img-background img {
+  object-fit: contain;
+  height: 80%;
+  width: 80%;
+}
+.carousel-cell img {
+  transition: opacity 0.5s ease-in;
+  opacity: 0.1;
+}
+.carousel-cell.is-selected img {
+  opacity: 1;
+}
+ .flickity-button, .flickity-button:hover, .flickity-button:focus {
+  background: none;
+  color: var(--light-color); 
+}
+.flickity-prev-next-button {
+  width: var(--large-arrow-width-height);
+  height: var(--large-arrow-width-height);
+  z-index: 50;
+}
+.flickity-prev-next-button .flickity-button-icon {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.flickity-prev-next-button.previous {
+  left: 0;
+}
+.flickity-prev-next-button.next {
+  right: 0;
+}
+
+/* Data */
+.description {
+  width: 100%;
+  padding: var(--margin-padding-size);
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+@media screen and (min-aspect-ratio: 3/4) {
+  .description {
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+  }
+  .description p {
+    background-color: rgba(0,0,0,0.5);
+    display:inline;
+    box-shadow: 0.25em 0 0 rgba(0,0,0,0.5),-0.25em 0 0 rgba(0,0,0,0.5);
+    box-decoration-break: clone;
+  }
+}
+.toggle {
+  font-family: var(--body-font-family-sans);
+  font-size: var(--normal-body-size);
+  font-weight: var(--normal-font-weight);
+  display: block;
+}
+.words {
+  max-width: 60ch;
+}
+.data {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - (var(--margin-padding-size) * 2));
+  margin: var(--margin-padding-size);
+  display: flex;
+  justify-content: space-between;
+}
+.caption, .number {
+  font-size: var(--small-size);
+  color: var(--light-color);
+  display: flex;
+  align-items: flex-end;
+}
+.caption {
+  width: calc(80% - var(--margin-padding-size));
+  max-width: 60ch;
+  margin-right: 0;
+}
+.number {
+  width: calc(20% - var(--margin-padding-size));
+  justify-content: flex-end;
+}

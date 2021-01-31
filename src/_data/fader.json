@@ -1,0 +1,36 @@
+{
+  "imgs": [
+    {
+      "src": "pantani/pantani-05.jpg",
+      "alt": "Pantani"
+    },
+    {
+      "src": "pantani/pantani-01.jpg",
+      "alt": "Pantani"
+    },
+    {
+      "src": "tom-simpson/Tom_Simpson_Rapha_Special_Edition.jpg",
+      "alt": "Tom Simpson"
+    },
+    {
+      "src": "coppi/coppi-13.jpg",
+      "alt": "Coppi"
+    },
+    {
+      "src": "the-rules/the-rules-printer1.jpg",
+      "alt": "The Rules"
+    },
+    {
+      "src": "the-rules/the-rules-spread.jpg",
+      "alt": "The Rules"
+    },
+    {
+      "src": "the-stage/the-stage-01.jpg",
+      "alt": "The Stage"
+    },
+    {
+      "src": "merckx/merckx-01.jpg",
+      "alt": "Merckx"
+    }
+  ]
+}

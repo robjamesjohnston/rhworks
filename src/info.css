@@ -1,0 +1,36 @@
+.info {
+  min-height: calc(100% - var(--header-height));
+  background-color: var(--highlight-color);
+  color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+}
+.info article, .info .copyright {
+  animation: fader 0.5s;
+}
+.info-content {
+  padding: var(--margin-padding-size);
+  padding-bottom: calc(var(--margin-padding-size) * 4);
+  flex: 1 0 auto;
+}
+.info-content p {
+  margin-bottom: 1.5em;
+}
+.info-content h2 a {
+  border-bottom: 2px solid;
+  padding-bottom: 3px;
+}
+.insta {
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+.insta path {
+  fill: var(--light-color);
+}
+.copyright {
+  padding: var(--margin-padding-size);
+  flex-shrink: 0;
+  font-size: var(--small-size);
+}

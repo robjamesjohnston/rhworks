@@ -1,0 +1,22 @@
+header {
+  height: var(--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: calc(100% - (2 * var(--margin-padding-size)));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homepage header nav {
+  animation: long-fader 4s ease-out;
+}
+.logo {
+  height: calc(var(--header-height) * 0.333);
+  position: absolute;
+}
+.logo img {
+  width: auto;
+}

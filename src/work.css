@@ -1,0 +1,88 @@
+/* List */
+.list {
+  min-height: calc(100% - var(--header-height));
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: var(--margin-padding-size);
+  padding-bottom: calc(3 * var(--margin-padding-size));
+  position: relative;
+}
+.list h2 {
+  position: relative;
+  animation: fader 0.5s;
+}
+.list h2 a {
+  position: relative;
+  z-index: 5;
+}
+.list h2 a:hover {
+  opacity: 1;
+}
+.list h2 a span.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+}
+.list h2 span.tags {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+  font-size: var(--small-size);
+  z-index: 6;
+}
+.list h2 span.issues, #grid .issues {
+  font-size: var(--small-size);
+}
+.list h2 a:hover span.img {
+  display: block;
+  width: 50vmin;
+  height: 50vmin;
+  overflow: visible;
+  z-index: -5;
+}
+.list h2:hover span.tags {
+  display: inline;
+}
+.list h2 a:hover span.img img {
+  object-fit: contain;
+  object-position: 0 0;
+}
+.list button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.list-arrow {
+  width: var(--large-arrow-width-height);
+  height: var(--large-arrow-width-height);
+}
+.list-arrow path {
+  fill: var(--light-color);
+}
+
+/* Grid */
+#grid {
+  display: grid;
+  gap: var(--margin-padding-size);
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: var(--grid-cols);
+  margin: var(--margin-padding-size);
+}
+.img-box {
+  position: relative;
+  padding-bottom: 100%;
+  margin-bottom: 1em;
+}
+.img-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+.grid-meta {
+  font-size: var(--small-size);
+}

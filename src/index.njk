@@ -1,0 +1,19 @@
+---
+layout: base.layout
+homepage: true
+---
+
+{% include '_header.njk' %}
+
+<section class="fader-box">
+  <div class="square-box">
+    <div id="stage">
+      {% for img in fader.imgs %}
+        {% responsiveImage img.src, img.alt, "80vw" %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="intro">
+    <h1><a href="/work/" title="Work">Print</a> and <a href="/work/" title="Work">Digital</a> design and dev&shy;elop&shy;ment</h1>
+  </div>
+</section>

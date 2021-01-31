@@ -1,0 +1,15 @@
+<title>
+    {% if title %}
+      {{ title }} &#8594;
+    {% endif %}
+    {{ site.title }}
+  </title>
+  <meta name="description" content="{{ summary or site.meta }}"/>
+  <link rel="canonical" href="{{ site.baseUrl }}{{ page.url }}"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="{{ title or site.title }}"/>
+  <meta property="og:url" content="{{ site.baseUrl }}{{ page.url }}"/>
+  <meta property="og:description" content="{{ summary or site.meta }}"/>
+  <meta property="og:image" content="{{ site.baseUrl }}/{{ featuredImg or "assets/rhworks.png" }}"/>
+  <meta property="og:type" content="article"/>
+  <meta name="twitter:card" value="summary"/>
