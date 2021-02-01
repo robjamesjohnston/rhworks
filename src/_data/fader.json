@@ -17,20 +17,24 @@
       "alt": "Coppi"
     },
     {
+      "src": "the-rules/the-rules-print.jpg",
+      "alt": "The Rules"
+    },
+    {
       "src": "the-rules/the-rules-printer1.jpg",
       "alt": "The Rules"
     },
     {
-      "src": "the-rules/the-rules-spread.jpg",
-      "alt": "The Rules"
-    },
-    {
-      "src": "the-stage/the-stage-01.jpg",
-      "alt": "The Stage"
-    },
-    {
       "src": "merckx/merckx-01.jpg",
       "alt": "Merckx"
+    },
+    {
+      "src": "rouleur3/rouleur3-mags.jpg",
+      "alt": "Rouleur"
+    },
+    {
+      "src": "rouleur2/rouleur2-sheets.jpg",
+      "alt": "Rouleur"
     }
   ]
 }

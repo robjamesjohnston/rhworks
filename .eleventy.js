@@ -5,7 +5,7 @@ const CleanCSS = require('clean-css');
 const { minify } = require('terser');
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addNunjucksAsyncShortcode('responsiveImage', async function (src, alt, sizes, lazy="") {
+  eleventyConfig.addNunjucksAsyncShortcode('responsiveImage', async function (src, alt, sizes) {
     let metadata = await Image('./src/img/' + src, {
       widths: [500, 1000, 1500, 2000, null],
       formats: ['jpeg'],
@@ -19,10 +19,10 @@ module.exports = function (eleventyConfig) {
     });
     let lowsrc = metadata.jpeg[0];
     return `<img
-      ${lazy}src="${lowsrc.url}"
+      src="${lowsrc.url}"
       width="${lowsrc.width}"
       height="${lowsrc.height}"
-      ${lazy}srcset="${metadata.jpeg.map((entry) => entry.srcset).join(', ')}"
+      srcset="${metadata.jpeg.map((entry) => entry.srcset).join(', ')}"
       alt="${alt}"
       sizes="${sizes}"
       loading="lazy"
@@ -54,6 +54,13 @@ module.exports = function (eleventyConfig) {
       console.error('Terser error: ', err);
       callback(null, code);
     }
+  });
+
+  eleventyConfig.addCollection('system', (collection) => {
+    const system = collection.getFilteredByTag('system').sort((a, b) => {
+      return Number(b.data.order) - Number(a.data.order);
+    });
+    return system;
   });
 
   eleventyConfig.addCollection('projects', (collection) => {

@@ -7,7 +7,7 @@
           style="background-color: {{ bgColor }}"
         {% endif %}
       >
-        {% responsiveImage img.src, img.alt, "80vw" if bgColor and not img.noBg else "100vw", "data-flickity-lazyload-" %}
+        {% responsiveImage img.src, img.alt, "80vw" if bgColor and not img.noBg else "100vw" %}
       </div>
     {% endfor %}
   </div>

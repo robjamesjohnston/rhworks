@@ -30,7 +30,6 @@ if (flick) {
     wrapAround: true,
     autoPlay: 2000,
     setGallerySize: false,
-    lazyLoad: 1,
     arrowShape: {
       x0: 0,
       x1: 50,
