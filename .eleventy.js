@@ -5,29 +5,36 @@ const CleanCSS = require('clean-css');
 const { minify } = require('terser');
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addNunjucksAsyncShortcode('responsiveImage', async function (src, alt, sizes) {
+  eleventyConfig.addNunjucksAsyncShortcode('responsiveImage', async function (src, alt, sizes, lazy = '') {
     let metadata = await Image('./src/img/' + src, {
       widths: [500, 1000, 1500, 2000, null],
-      formats: ['jpeg'],
       outputDir: './output/img/',
-      // sharpJpegOptions: { quality: 90 },
+      sharpWebpOptions: { quality: 50 },
+      sharpJpegOptions: { quality: 50 },
       filenameFormat: function (id, src, width, format, options) {
         const extension = path.extname(src);
         const name = path.basename(src, extension);
-        return `${name}-${width}w.${format}`;
+        return `${id}-${name}-${width}w.${format}`;
       },
     });
     let lowsrc = metadata.jpeg[0];
-    return `<img
-      src="${lowsrc.url}"
-      width="${lowsrc.width}"
-      height="${lowsrc.height}"
-      srcset="${metadata.jpeg.map((entry) => entry.srcset).join(', ')}"
-      alt="${alt}"
-      sizes="${sizes}"
-      loading="lazy"
-      decoding="async"
-    >`;
+    return `<picture>
+    ${Object.values(metadata)
+      .map((imageFormat) => {
+        return `  <source type="${imageFormat[0].sourceType}" ${lazy}srcset="${imageFormat
+          .map((entry) => entry.srcset)
+          .join(', ')}" sizes="${sizes}">`;
+      })
+      .join('\n')}
+      <img
+        ${lazy}src="${lowsrc.url}"
+        width="${lowsrc.width}"
+        height="${lowsrc.height}"
+        alt="${alt}"
+      >
+    </picture>`;
+    // loading="lazy"
+    // decoding="async"
   });
 
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {

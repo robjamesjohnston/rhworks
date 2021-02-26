@@ -29,10 +29,12 @@
   height: 100%;
   width: 100%;
 }
-.carousel-cell.img-background img {
-  object-fit: contain;
+.carousel-cell.img-background picture {
   height: 80%;
   width: 80%;
+}
+.carousel-cell.img-background picture img {
+  object-fit: contain;
 }
 .carousel-cell img {
   transition: opacity 0.5s ease-in;
@@ -79,7 +81,7 @@
   .description p {
     background-color: rgba(0,0,0,0.5);
     display:inline;
-    box-shadow: 0.25em 0 0 rgba(0,0,0,0.5),-0.25em 0 0 rgba(0,0,0,0.5);
+    box-shadow: 0.25em 0 0 rgba(0,0,0,0.5), -0.25em 0 0 rgba(0,0,0,0.5);
     box-decoration-break: clone;
   }
 }
@@ -95,8 +97,8 @@
 .data {
   position: absolute;
   bottom: 0;
-  width: calc(100% - (var(--margin-padding-size) * 2));
-  margin: var(--margin-padding-size);
+  width: 100%;
+  padding: var(--margin-padding-size);
   display: flex;
   justify-content: space-between;
 }

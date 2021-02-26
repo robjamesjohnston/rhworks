@@ -12,7 +12,10 @@ order: 0
     <h2>
       <span class="tags">{{ project.data.tags }}</span>
       <a href="{{ project.url }}" title="{{ project.data.title }}">
-        {{ project.data.title }} <span class="issues">{{ project.data.issues }}</span>
+        {{ project.data.title }}
+        {% if project.data.issues %}
+          <span class="issues">{{ project.data.issues }}</span>
+        {% endif %}
         <span class="img">{% responsiveImage project.data.featuredImg, project.data.title, "50vw" %}</span>
       </a>
     </h2>
@@ -26,12 +29,12 @@ order: 0
   </a></button>
 </section>
 
-<section id="grid">
+<section class="project-grid">
   {% for project in collections.projects %}
     <a href="{{ project.url }}" title="{{ project.data.title }}">
       <article>
         <div class="img-box">
-          {% responsiveImage project.data.featuredImg, project.data.title, "(min-width: 660px) 40vw, 80vw" %}
+          {% responsiveImage project.data.featuredImg, project.data.title, "(min-width: 640px) 50vw, 100vw" %}
         </div>
         <h3>
           {{ project.data.title }}
@@ -49,3 +52,5 @@ order: 0
     </a>
   {% endfor %}
 </section>
+
+{% include '_footer.njk' %}

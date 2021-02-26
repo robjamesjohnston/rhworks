@@ -30,6 +30,7 @@ if (flick) {
     wrapAround: true,
     autoPlay: 2000,
     setGallerySize: false,
+    lazyLoad: 1,
     arrowShape: {
       x0: 0,
       x1: 50,
@@ -45,7 +46,13 @@ if (flick) {
   var caption = document.querySelector('.caption p');
   function setCaption() {
     // set image caption using img's alt
-    caption.textContent = flkty.selectedElement.children[0].alt;
+    var matcher = document.querySelector('.nav-center');
+    var flickPath = flkty.selectedElement.children[0].children[2].alt;
+    if (matcher.title !== flickPath) {
+      caption.textContent = flickPath;
+    } else {
+      caption.textContent = "";
+    }
   }
   setCaption();
   flkty.on('select', function () {

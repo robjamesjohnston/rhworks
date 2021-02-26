@@ -7,26 +7,146 @@ order: 0
 
 <article class="info-content">
 
-Established in 2018 by art director Rob Johnston, R H Works is an award-winning practice specialising in design and development for print and digital platforms in the spheres of art, music and sport
+<div class="grid-parent"> 
 
-Past and present clients include Rapha, Rouleur, Bloomsbury and The Stage
+<div class="col-1">
+<h2>
+
+Established in 2018 by art director Rob Johnston, <span style="white-space: nowrap;">R H Works</span> is an award-winning practice specialising in design and development for print and digital platforms in the spheres of art, music and sport
+
+<br/>
+
+Past and present clients include Rapha, Rouleur, Bluetrain Publishing and Bloomsbury
+
+<br/>
+
+</h2>
+</div>
+
+<div class="col-2">
+<h3>
+
+Call
+
++44 (0) 7989 &#8203;920 822
 
 —
 
-+44 (0) 7989 920 822<br/>
-<a class="external-link" href="mailto:hello@rhworks.co" title="Email" target="_blank">hello@rhworks.co</a>
+Email
+
+<a class="external-link" href="mailto:hello@rhworks.co" title="Email" target="_blank">hello@&#8203;rhworks.co</a>
 
 —
 
-<a class="external-link" href="https://www.instagram.com/rhworksco/" title="Instagram" target="_blank">
-  <svg class="insta" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-  @rhworksco
-</a>
+Social
+
+<a class="external-link" href="https://www.instagram.com/rhworksco/" title="Social" target="_blank">@rhworks&#8203;co</a>
+
+<br/>
+
+</h3>
+</div>
+
+<div class="col-3">
+
+**Awards**
+
+<br/>
+
+2018
+
+PPA Independent Publishers Awards Designer of the Year
+
+Cycling Book of the Year at the Sports Book Awards, Winner, Tom Simpson
+
+<br/>
+
+2017
+
+William Hill Sports Book of the Year Award, Winner, Tom Simpson
+
+<br/>
+
+2013
+
+Sports Book Awards, Shortlisted, Coppi
+
+<br/>
+
+—
+
+<br/>
+
+**Press**
+
+<br/>
+
+<a class="external-link" href="https://www.sigmasports.com/hub/stories/behind-the-scenes-at-rouleur-magazine" title="Sigma Sports" target="_blank">Sigma Sports</a>
+
+Rouleur Editorial Team
+
+<br/>
+
+<a class="external-link" href="https://www.designweek.co.uk/issues/30-november-6-december/the-stage-redesigns-print-edition-to-align-with-website/" title="Design Week" target="_blank">Design Week</a>
+
+The Stage
+
+<br/>
+
+<a class="external-link" href="https://www.itsnicethat.com/articles/rouleur-covers" title="It’s Nice That" target="_blank">It’s Nice That</a>
+
+Rouleur
+
+<br/>
+
+—
+
+<br/>
+
+**Clients**
+
+<br/>
+
+Rapha
+
+Rouleur
+
+Bluetrain Publishing
+
+Bloomsbury
+
+The Stage
+
+Royal Yachting Association
+
+<br/>
+
+—
+
+<br/>
+
+**Capabilities**
+
+<br/>
+
+Editorial design
+
+Print design
+
+Art direction
+
+Digital design
+
+Development
+
+Identity
+
+Branding
+
+</div>
+
+</div>
 
 </article>
 
-<footer class="copyright">
-
-©2020 Built with <a class="external-link" href="https://www.11ty.dev" title="11ty" target="_blank">11ty</a> by R H Works
-
-</footer>
+{% include '_footer.njk' %}

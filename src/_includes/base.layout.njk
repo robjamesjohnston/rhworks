@@ -7,10 +7,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500&display=swap" rel="stylesheet">
   {% set css %}
-    {% include 'css/main.css' %}
     {% if "project.layout" in layout %}
-      {% include 'css/flickity.min.css' %}
+      {% include 'css/flickity.css' %}
     {% endif %}
+    {% include 'css/main.css' %}
     {% include '../index.css' %}
     {% include '../projects.css' %}
     {% include '../info.css' %}
@@ -38,7 +38,7 @@
   </main>
   {% set js %}
     {% if "project.layout" in layout %}
-      {% include "js/flickity.pkgd.min.js" %}
+      {% include "js/flickity.pkgd.js" %}
     {% endif %}
     {% include "js/rhworks.js" %}
   {% endset %}

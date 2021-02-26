@@ -64,9 +64,10 @@
 }
 
 /* Grid */
-#grid {
+.project-grid {
   display: grid;
-  gap: var(--margin-padding-size);
+  column-gap: 4vw; /*fix*/
+  row-gap: 12vw; /*fix*/
   /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   grid-template-columns: var(--grid-cols);
   margin: var(--margin-padding-size);

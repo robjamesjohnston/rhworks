@@ -161,26 +161,6 @@ imgs: [
   {
     src: "rouleur2/rouleur2-37.jpg",
     alt: ""
-  },
-  {
-    src: "rouleur2/rouleur2-38.jpg",
-    alt: ""
-  },
-  {
-    src: "rouleur2/rouleur2-39.jpg",
-    alt: ""
-  },
-  {
-    src: "rouleur2/rouleur2-40.jpg",
-    alt: ""
-  },
-  {
-    src: "rouleur2/rouleur2-41.jpg",
-    alt: ""
-  },
-  {
-    src: "rouleur2/rouleur2-42.jpg",
-    alt: ""
   }
 ]
 summary: "Design and art direction of more than 70 issues of Rouleur, a premium cycling magazine, over the course of 9 years. During this time, I was responsible for two complete redesigns as well as work on the original iteration"

@@ -32,6 +32,7 @@ fieldset{border-width:0; padding:0; margin:0;}
   --light-color: #fff;
   --secondary-color: #999c9f;
   --highlight-color: #00f;
+  --highlight-color-2: #ff0;
 }
 @media screen and (min-width: 640px) {
   :root {
@@ -127,10 +128,10 @@ button {
 }
 a:hover.external-link {
   opacity: 1;
-  color: #ff0;
+  color: var(--highlight-color-2);
 }
 a:hover.external-link .insta path {
-  fill: #ff0;
+  fill: var(--highlight-color-2);
 }
 @keyframes fader {
   0% {
