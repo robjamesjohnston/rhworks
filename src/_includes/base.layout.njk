@@ -28,10 +28,8 @@
   <main
     {% if homepage %}
       class="homepage"
-    {% elseif "project.layout" in layout %}
-      class="project-page"
-      {% elseif "website.layout" in layout %}
-      class="website-page"
+    {% elseif "website.layout" in layout or "project.layout" in layout %}
+      class="work-page"
     {% endif %}
   >
     {{ content | safe }}

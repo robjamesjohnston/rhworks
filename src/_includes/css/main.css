@@ -73,7 +73,7 @@ html, body, main {
   html, body, main {
     min-height: calc(100vmin + var(--header-height));
   }
-  main.project-page, main.website-page {
+  main.work-page {
     min-height: calc(100vmin + var(--header-nav-height));
   }
 }
@@ -126,12 +126,21 @@ button {
   padding-right: 1em;
   margin-right: 0.2em;
 }
+.external-link-2 {
+  background: 
+    url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve"><g><g transform="matrix(1 0 0 -1 0 1008)"><path fill="blue" d="M850,368h70V18H10v910h350v-70H80V88h770V368z M500,998h490V508h-70v367.5L342.5,298L290,350.5L867.5,928H500V998z"/></g></g></svg>')
+    center right / 0.8em 0.8em
+    no-repeat;
+  padding-right: 1em;
+  margin-right: 0.2em;
+}
 a:hover.external-link {
   opacity: 1;
   color: var(--highlight-color-2);
 }
-a:hover.external-link .insta path {
-  fill: var(--highlight-color-2);
+a:hover.external-link-2 {
+  opacity: 1;
+  color: var(--highlight-color);
 }
 @keyframes fader {
   0% {

@@ -43,9 +43,7 @@ order: 0
             <span class="issues">{{ project.data.issues }}</span>
           {% endif %}
         </h3>
-        <h3>
-          <strong>{{ project.data.subTitle }}</strong>
-        </h3>
+        <h3>{{ project.data.subTitle }}</h3>
         <div class="grid-meta">
           <p>—</p>
           <p>{{ "Published by " + project.data.publisher + "," if project.data.publisher }}
