@@ -21,15 +21,16 @@ order: 0
     </h2>
   {% endfor %}
 
-  <button title="Projects"><a href="#grid" title="Projects">
-    <svg class="list-arrow" viewBox="0 0 100 100">
-      <path d="M 0,50 L 50,100 L 53,97 L 6,50 L 53,3 L 50,0 Z"
-      transform="rotate(-90 50 50)"/>
-    </svg>
-  </a></button>
+  <button title="Projects">
+    <a href="#project-grid" title="Projects">
+      <svg class="list-arrow" viewbox="0 0 100 100">
+        <path d="M 0,50 L 50,100 L 53,97 L 6,50 L 53,3 L 50,0 Z" transform="rotate(-90 50 50)"/>
+      </svg>
+    </a>
+  </button>
 </section>
 
-<section class="project-grid">
+<section id="project-grid">
   {% for project in collections.projects %}
     <a href="{{ project.url }}" title="{{ project.data.title }}">
       <article>
@@ -42,10 +43,13 @@ order: 0
             <span class="issues">{{ project.data.issues }}</span>
           {% endif %}
         </h3>
-        <h3><strong>{{ project.data.subTitle }}</strong></h3>
+        <h3>
+          <strong>{{ project.data.subTitle }}</strong>
+        </h3>
         <div class="grid-meta">
           <p>—</p>
-          <p>{{ "Published by " + project.data.publisher + "," if project.data.publisher }} {{ project.data.year }}</p>
+          <p>{{ "Published by " + project.data.publisher + "," if project.data.publisher }}
+            {{ project.data.year }}</p>
           <p>{{ project.data.tags }}</p>
         </div>
       </article>

@@ -64,7 +64,7 @@
 }
 
 /* Grid */
-.project-grid {
+#project-grid {
   display: grid;
   column-gap: 4vw; /*fix*/
   row-gap: 12vw; /*fix*/
