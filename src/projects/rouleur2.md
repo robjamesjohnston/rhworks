@@ -1,6 +1,5 @@
 ---
-title: "Rouleur"
-issues: "40—67"
+title: "Rouleur ’16"
 subTitle: "Art direction of more than 70 issues over 9 years"
 tags: Editorial design
 year: "2013—2016"

@@ -32,9 +32,6 @@
   font-size: var(--small-size);
   z-index: 6;
 }
-.list h2 span.issues, #grid .issues {
-  font-size: var(--small-size);
-}
 .list h2 a:hover span.img {
   display: block;
   width: 50vmin;

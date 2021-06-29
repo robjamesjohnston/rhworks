@@ -13,9 +13,6 @@ order: 0
       <span class="tags">{{ project.data.tags }}</span>
       <a href="{{ project.url }}" title="{{ project.data.title }}">
         {{ project.data.title }}
-        {% if project.data.issues %}
-          <span class="issues">{{ project.data.issues }}</span>
-        {% endif %}
         <span class="img">{% responsiveImage project.data.featuredImg, project.data.title, "50vw" %}</span>
       </a>
     </h2>
@@ -37,12 +34,7 @@ order: 0
         <div class="img-box">
           {% responsiveImage project.data.featuredImg, project.data.title, "(min-width: 640px) 50vw, 100vw" %}
         </div>
-        <h3>
-          {{ project.data.title }}
-          {% if project.data.issues %}
-            <span class="issues">{{ project.data.issues }}</span>
-          {% endif %}
-        </h3>
+        <h3>{{ project.data.title }}</h3>
         <h3>{{ project.data.subTitle }}</h3>
         <div class="grid-meta">
           <p>—</p>

@@ -109,15 +109,11 @@ Rouleur
 
 Rapha
 
-Rouleur
-
 Bluetrain Publishing
 
+Rouleur
+
 Bloomsbury
-
-The Stage
-
-Royal Yachting Association
 
 <br/>
 
@@ -129,15 +125,15 @@ Royal Yachting Association
 
 <br/>
 
+Digital design
+
+Development
+
 Editorial design
 
 Print design
 
 Art direction
-
-Digital design
-
-Development
 
 Identity
 

@@ -1,6 +1,5 @@
 ---
-title: "Rouleur"
-issues: "68—99"
+title: "Rouleur ’20"
 subTitle: "Art direction of more than 70 issues over 9 years"
 tags: Editorial design
 year: "2017—2020"

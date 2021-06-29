@@ -34,7 +34,7 @@ fieldset{border-width:0; padding:0; margin:0;}
   --highlight-color: #00f;
   --highlight-color-2: #ff0;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   :root {
     --header-height: 150px;
     --nav-height: 75px;

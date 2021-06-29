@@ -1,13 +1,13 @@
 ---
 title: "Bluetrain Publishing"
-subTitle: "Books For The Curious"
+subTitle: "Squarespace ecommerce"
 tags: Website design
 year: "2020"
 layout: website.layout
 order: 7
 featuredImg: "websites/screencapture-bluetrainpublishing.jpg"
 projectUrl: https://www.bluetrainpublishing.com
-summary: "Design and build of a website for award-winning Bluetrain Publishing, producers of fine quality books"
+summary: "Ecommerce site built with Squarespace for award-winning Bluetrain Publishing, producers of fine quality books"
 ---
 
 {{ summary }}
