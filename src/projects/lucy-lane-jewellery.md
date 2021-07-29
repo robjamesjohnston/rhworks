@@ -5,11 +5,19 @@ tags: Website design
 year: "2021"
 layout: project.layout
 order: 10
-featuredImg: "websites/screencapture-lucylanejewellery.jpg"
+featuredImg: "lucy-lane-jewellery/llj-home-crop.png"
 projectUrl: https://www.lucylanejewellery.com
 imgs: [
   {
-    src: "websites/screencapture-lucylanejewellery.jpg",
+    src: "lucy-lane-jewellery/llj-home.png",
+    alt: ""
+  },
+  {
+    src: "lucy-lane-jewellery/llj-product.png",
+    alt: ""
+  },
+  {
+    src: "lucy-lane-jewellery/llj-collection.png",
     alt: ""
   }
 ]

@@ -2,7 +2,7 @@
   <div class="carousel">
     {% for img in imgs %}
       <div
-        class="carousel-cell {{ "img-background" if bgColor and not img.noBg }}"
+        class="carousel-cell {{ "img-background" if bgColor and not img.noBg }} {{ "web-scroll" if projectUrl }}"
         {% if bgColor and not img.noBg %}
           style="background-color: {{ bgColor }}"
         {% endif %}

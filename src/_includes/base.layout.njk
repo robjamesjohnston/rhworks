@@ -8,21 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500&display=swap" rel="stylesheet">
   {% set css %}
     {% if "project.layout" in layout %}
-      {% include 'css/flickity.css' %}
+      {% include "css/flickity.css" %}
     {% endif %}
-    {% include 'css/main.css' %}
-    {% include '../index.css' %}
-    {% include '../projects.css' %}
-    {% include '../info.css' %}
-    {% include '_header.css' %}
-    {% include '_nav.project.css' %}
-    {% include '_carousel.css' %}
-    {% include '_iframe.css' %}
+    {% include "css/main.css" %}
+    {% include "../index.css" %}
+    {% include "../projects.css" %}
+    {% include "../info.css" %}
+    {% include "_header.css" %}
+    {% include "_nav.project.css" %}
+    {% include "_carousel.css" %}
   {% endset %}
   <style>
     {{ css | cssmin | safe }}
   </style>
-  {% include '_meta.njk' %}
+  {% include "_meta.njk" %}
 </head>
 <body>
   <main
