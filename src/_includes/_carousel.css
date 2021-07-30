@@ -24,7 +24,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--dark-color);
+  background-color: var(--secondary-color);
   opacity: 0.1;
   overflow-y: scroll;
   pointer-events: none;
@@ -49,6 +49,10 @@
 .web-scroll img {
   object-position: center top;
   height: auto;
+}
+.web-scroll img:hover {
+  transform: translateY(-20px);
+  transition: transform 0.5s ease;
 }
 .carousel-cell.img-background picture {
   height: 80%;
